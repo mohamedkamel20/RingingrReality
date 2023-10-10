@@ -123,3 +123,4 @@ Some third-party plugins that we used to build this template. Please check their
 * **Slick**: <https://kenwheeler.github.io/slick/>
 * **Shuffle**: <https://vestride.github.io/Shuffle/>
 * **SyoTimer**: <http://syomochkin.xyz/folio/syotimer/demo.html>
+# RingingrReality
