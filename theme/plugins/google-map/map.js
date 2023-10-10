@@ -140,7 +140,7 @@ function initialize() {
     position: nottingham,
     map: map,
     icon: pinIcon,
-    title: 'Airspace'
+    title: 'RingingReality solutions'
   });
 }
 var map = document.getElementById('map_canvas');
