@@ -138,5 +138,32 @@ $(document).ready(function () {
 	$(window).on('scroll', function () {
 		counter();
 	});
+document.getElementById("contact-form").addEventListener("submit", function (e) {
+	e.preventDefault();
 
+
+	const formData = new FormData(this);
+
+	fetch('/contact-form', {
+		method: 'POST',
+		body: formData,
+		headers: {
+			'Content-Type': 'multipart/form-data',
+		},
+	})
+	.then(response => response.json())
+	.then(data => {
+		if (data.success) {
+			// Handle success (e.g., show a success message)
+			console.log("Email sent successfully.");
+		} else {
+			// Handle errors (e.g., show an error message)
+			console.error("Email sending failed.");
+		}
+	})
+	.catch(error => {
+		console.error("Network error:", error);
+	});
 });
+});
+

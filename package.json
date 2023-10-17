@@ -9,7 +9,9 @@
     "build": "gulp build"
   },
   "dependencies": {
+    "body-parser": "^1.20.2",
     "browser-sync": "^2.27.10",
+    "express": "^4.18.2",
     "express-validator": "^7.0.1",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -17,7 +19,10 @@
     "gulp-header-comment": "^0.10.0",
     "gulp-rimraf": "^1.0.0",
     "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "http": "^0.0.1-security",
+    "nodemailer": "^6.9.6",
+    "path": "^0.12.7",
     "sass": "^1.52.3"
   }
 }
