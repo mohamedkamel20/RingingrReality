@@ -165,5 +165,32 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
 		console.error("Network error:", error);
 	});
 });
+document.getElementById("send-mail").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    fetch('/send-mail', {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Content-Type': 'multipart/form-data',
+            'Content-Disposition': 'form-data; name="send-mail"'
+        },
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            // Handle success (e.g., show a success message)
+            console.log("Email sent successfully.");
+        } else {
+            // Handle errors (e.g., show an error message)
+            console.error("Email sending failed.");
+        }
+    })
+    .catch(error => {
+        console.error("Network error:", error);
+    });
+});
 });
 
