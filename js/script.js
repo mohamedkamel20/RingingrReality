@@ -183,6 +183,8 @@ document.getElementById("send-mail").addEventListener("submit", function (e) {
         if (data.success) {
             // Handle success (e.g., show a success message)
             console.log("Email sent successfully.");
+
+
         } else {
             // Handle errors (e.g., show an error message)
             console.error("Email sending failed.");

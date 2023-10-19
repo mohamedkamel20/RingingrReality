@@ -49,10 +49,14 @@ app.post('/contact-form', (req, res) => {
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             console.error(error);
-            res.json({ success: false });
+            alert('There was an error sending your message. Please try again later.');
         } else {
             console.log('Email sent: ' + info.response);
+        
+
             res.json({ success: true });
+
+
         }
     });
 });
@@ -77,7 +81,10 @@ app.post('/send-mail', (req, res) => {
             res.json({ success: false });
         } else {
             console.log('Email sent: ' + info.response);
+          
+  
             res.json({ success: true });
+          
         }
     });
 });
