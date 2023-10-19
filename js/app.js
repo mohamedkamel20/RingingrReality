@@ -6,7 +6,7 @@ const http = require('http');
 const path = require('path');
 
 const app = express();
-const port = 3000;
+const port = process.env.Port || 3000;
 const server = http.Server(app);
 
 app.use(cors());
@@ -33,17 +33,17 @@ var transporter = nodemailer.createTransport({
   });
 
 app.post('/contact-form', (req, res) => {
-    const { name, email, message,date  } = req.body;
+    const { name, email, message,date ,subject } = req.body;
 
     const mailOptions = {
-        from: email,
-        to: 'mohmmdcapo13@gmail.com',
-        subject: 'Contact Form Submission',
+        from: req.body.email,
+        to: 'mohmmdcapo13@gmail.com"',
+        subject: req.body.subject,
         text: `
             name: ${name}
             email: ${email}
             message: ${message}
-            date: ${date}
+       
         `,
     };
 

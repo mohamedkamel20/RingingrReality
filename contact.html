@@ -24,7 +24,7 @@
   <meta name="theme-name" content="RingingReality solutions">
   <meta name="generator" content="RingingReality solutions v1.0">
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/rlogo.jpg" />
 
 
   <!-- bootstrap.min css -->
@@ -52,7 +52,8 @@
 			<div class="col-lg-12">
 				<nav class="navbar navbar-expand-lg p-0">
 					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.png" alt="Logo">
+            <h1 class="animated fadeInUp">Ringing Reality</h1>
+
 					</a>
 
 					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,56 +65,11 @@
 							<li class="nav-item @@home">
 								<a class="nav-link" href="index.html">Home</a>
 							</li>
-							<li class="nav-item dropdown @@portfolio">
-								<a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Portfolio <span class="ion-ios-arrow-down"></span></a>
-								<ul class="dropdown-menu" aria-labelledby="dropdown03">
-									<li><a class="dropdown-item @@portfolioFilter" href="portfolio.html">Portfolio Filter</a></li>
-									<li><a class="dropdown-item @@portfolioSingle" href="portfolio-single.html">Portfolio Single</a></li>
-
-									<li class="dropdown dropdown-submenu dropright">
-										<a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button"
-											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-
-										<ul class="dropdown-menu" aria-labelledby="dropdown0301">
-											<li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-											<li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
+					
+								
 							<li class="nav-item @@service"><a class="nav-link" href="service.html">Service</a></li>
-							<li class="nav-item dropdown @@blog">
-								<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
-									aria-expanded="false">Blog <span class="ion-ios-arrow-down"></span></a>
-								<ul class="dropdown-menu" aria-labelledby="dropdown05">
-									<li><a class="dropdown-item @@blogGrid" href="blog-grid.html">Blog Grid</a></li>
-									<li><a class="dropdown-item @@blogSingle" href="blog-single.html">Blog Single</a></li>
-									<li><a class="dropdown-item @@blogRS" href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-									<li><a class="dropdown-item @@blogLS" href="blog-left-sidebar.html">Blog Left Sidebar</a></li>
-									<li><a class="dropdown-item @@blogFW" href="blog-full-width.html">Blog Full Width</a></li>
-
-									<li class="dropdown dropdown-submenu dropleft">
-										<a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0501" role="button"
-											data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
-
-										<ul class="dropdown-menu" aria-labelledby="dropdown0501">
-											<li><a class="dropdown-item" href="index.html">Submenu 01</a></li>
-											<li><a class="dropdown-item" href="index.html">Submenu 02</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li class="nav-item dropdown @@pages">
-								<a class="nav-link dropdown-toggle" href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true"
-									aria-expanded="false">Pages <span class="ion-ios-arrow-down"></span></a>
-								<ul class="dropdown-menu" aria-labelledby="dropdown05">
-									<li><a class="dropdown-item @@about" href="about.html">About Us</a></li>
-									<li><a class="dropdown-item @@comingSoon" href="coming-soon.html">Coming Soon</a></li>
-									<li><a class="dropdown-item @@404" href="404.html">404 Page</a></li>
-									<li><a class="dropdown-item @@faq" href="faq.html">FAQ</a></li>
-									<li><a class="dropdown-item @@pricing" href="pricing.html">Pricing Table</a></li>
-								</ul>
-							</li>
+						
+						
 							<li class="nav-item active"><a class="nav-link" href="contact.html">Contact</a></li>
 						</ul>
 					</div>
@@ -128,33 +84,34 @@
       <div class="col-md-12">
         <div class="block">
           <h1>Drop Us A Note</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quibusdam.</p>
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, quibusdam.</p> -->
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- contact form start -->
+<!-- Contact Us -->
 <section class="contact-form">
   <div class="container">
-    <form class="row" id="contact-form">
+    <form class="row" id="contact-form" action="/contact-form"  method="POST">
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <div class="form-group">
-            <input name="user_name" type="text" class="form-control" placeholder="Your Name">
+            <input name="name" type="text" class="form-control" placeholder="Your Name">
           </div>
           <div class="form-group">
-            <input name="user_email" type="text" class="form-control" placeholder="Email Address">
+            <input name="email" type="text" class="form-control" placeholder="Email Address">
           </div>
           <div class="form-group">
-            <input name="user_subject" type="text" class="form-control" placeholder="Subject">
+            <input name="subject" type="text" class="form-control" placeholder="Subject">
           </div>
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <div class="form-group-2">
-            <textarea name="user_message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+            <textarea name="message" class="form-control" rows="4" placeholder="Your Message"></textarea>
           </div>
           <button class="btn btn-default" type="submit">Send Message</button>
         </div>
@@ -168,35 +125,16 @@
           <h2>Stop By For A visit</h2>
           <ul class="address-block">
             <li>
-              <i class="ion-ios-location-outline"></i>North Main Street,Brooklyn Australia
+              <i class="ion-ios-location-outline"></i>Zayed Street, Sheikh Zayed Egypt
             </li>
             <li>
               <i class="ion-ios-email-outline"></i>Email: contact@mail.com
             </li>
             <li>
-              <i class="ion-ios-telephone-outline"></i>Phone:+88 01672 506 744
+              <i class="ion-ios-telephone-outline"></i>Phone:+2 01672 506 744
             </li>
           </ul>
-          <ul class="social-icons">
-            <li>
-              <a href="http://www.themefisher.com"><i class="ion-social-googleplus-outline"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="ion-social-linkedin-outline"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="ion-social-pinterest-outline"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="ion-social-dribbble-outline"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="ion-social-twitter-outline"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="ion-social-facebook-outline"></i></a>
-            </li>
-          </ul>
+    
         </div>
       </div>
       <div class="col-md-6 mt-5 mt-md-0">
@@ -219,15 +157,15 @@
 					<ul>
 						<li><a href="about.html">About Us</a></li>
 						<li><a href="contact.html">Contact us</a></li>
-						<li><a href="service.html">How it works</a></li>
-						<li><a href="faq.html">FAQ</a></li>
-						<li><a href="pricing.html">Pricing</a></li>
+						<li><a href="service.html">Services</a></li>
+						<!-- <li><a href="faq.html">FAQ</a></li> -->
+						<!-- <li><a href="pricing.html">Pricing</a></li> -->
 					</ul>
 				</div>
-				<p class="copyright mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; Designed & Developed by <a
-						href="http://www.themefisher.com">Themefisher</a>. All rights reserved.
-					<br> Get More <a href="https://themefisher.com/free-bootstrap-templates/">Free Bootstrap
-						Templates</a>
+				<p class="copyright mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; Designed & Developed by
+						RingingReality</a>. All rights reserved.
+					<!-- <br> Get More <a href="https://themefisher.com/free-bootstrap-templates/">Free Bootstrap
+						Templates</a> -->
 				</p>
 			</div>
 		</div>
