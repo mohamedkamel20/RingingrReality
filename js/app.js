@@ -33,7 +33,7 @@ var transporter = nodemailer.createTransport({
 });
 
 app.post('/contact-form', (req, res) => {
-    const { name, email, message, date, subject } = req.body;
+    const { name, email, message, date, subject ,phone } = req.body;
 
     const mailOptions = {
         from: req.body.email,
@@ -43,6 +43,8 @@ app.post('/contact-form', (req, res) => {
             name: ${name}
             email: ${email}
             message: ${message}
+            date: ${date}
+            phone: ${phone}
         `,
     };
 
@@ -62,7 +64,7 @@ app.post('/contact-form', (req, res) => {
 });
 
 app.post('/send-mail', (req, res) => {
-    const { name, email, message, date, subject } = req.body;
+    const { name, email, message, date, subject ,phone} = req.body;
 
     const mailOptions = {
         from: req.body.email,
@@ -72,6 +74,9 @@ app.post('/send-mail', (req, res) => {
             name: ${name}
             email: ${email}
             message: ${message}
+            date: ${date}
+            phone: ${phone}
+
         `,
     };
 
