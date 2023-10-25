@@ -1194,7 +1194,10 @@
  .contact-form {
    padding-top: 70px;
    padding-bottom: 35px;
+   margin: 0 auto;
+   max-width: 800px;
  }
+ 
  .contact-form .block .form-group {
    padding-bottom: 15px;
    margin: 0px;
