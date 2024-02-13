@@ -27,7 +27,7 @@ var transporter = nodemailer.createTransport({
     port: 587,
     secure: false,
     auth: {
-      user: "ringrealityrs@gmail.com",
+      user: "enzobpo@gmail.com",
       pass: "xawq itas mxcj dqjh "
     }
 });
@@ -37,7 +37,7 @@ app.post('/contact-form', (req, res) => {
 
     const mailOptions = {
         from: req.body.email,
-        to: 'ringrealityrs@gmail.com',
+        to: 'enzobpo@gmail.com',
         subject: req.body.subject,
         text: `
             name: ${name}
@@ -68,7 +68,7 @@ app.post('/send-mail', (req, res) => {
 
     const mailOptions = {
         from: req.body.email,
-        to: 'ringrealityrs@gmail.com',
+        to: 'enzobpo@gmail.com',
         subject: req.body.subject,
         text: `
             name: ${name}
