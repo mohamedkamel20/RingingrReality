@@ -140,7 +140,7 @@ function initialize() {
     position: nottingham,
     map: map,
     icon: pinIcon,
-    title: 'RingingReality solutions'
+    title: 'ENZOBPO solutions'
   });
 }
 var map = document.getElementById('map_canvas');
